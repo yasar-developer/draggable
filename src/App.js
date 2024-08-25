@@ -49,7 +49,7 @@ const App = () => {
   useEffect(() => {
     const fetchPositions = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/get-positions');
+        const response = await fetch('https://back-end-seven-mu.vercel.app/api/get-positions');
         if (!response.ok) {
           throw new Error('Failed to fetch component positions');
         }
@@ -71,7 +71,7 @@ const App = () => {
 
     // Send updated position to the backend API
     try {
-      const response = await fetch('http://localhost:5000/api/update-position', {
+      const response = await fetch('https://back-end-seven-mu.vercel.app/api/update-position', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
