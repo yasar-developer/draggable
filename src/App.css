@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +33,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.draggable-component {
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: move;
+}
+
+.lines {
+  pointer-events: none; /* Ensure lines don't interfere with dragging */
+}
+
+.dragging {
+  opacity: 0.5;
 }
